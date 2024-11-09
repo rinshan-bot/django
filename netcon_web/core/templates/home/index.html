@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+  <section class="wrapper overflow-hidden">
+    <div class="container pt-36 xl:pt-[10.5rem] lg:pt-[10.5rem] md:pt-[10.5rem] !text-center !relative">
+      <div class="absolute" style="top: -15%; left: 50%; transform: translateX(-50%);" data-cue="fadeIn">
+        <img class="!rounded-[0.8rem]" src="{% static 'img/blurry.png' %}" alt="image" />
+      </div>
+      <div class="flex flex-wrap mx-[-15px] lg:mx-0 xl:mx-[-20px] mb-7 md:!mb-10 lg:!mb-[6rem] xl:!mb-[6rem] items-center">
+        <div class="md:w-6/12 lg:w-6/12 xl:w-6/12 md:!ml-[16.66666667%] lg:!ml-[8.33333333%] xl:!ml-[8.33333333%] w-full flex-[0_0_auto] px-[15px] lg:px-0 xl:px-[20px] max-w-full !relative lg:!order-2 xl:!order-2" data-cue="zoomIn" data-show="true" style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+          <div class="shape bg-dot primary rellax !w-[7rem] !h-[9rem] absolute z-[1] opacity-50 !bg-[radial-gradient(#3f78e0_2px,transparent_2.5px)]" data-rellax-speed="1" style="top: -1rem; left: -1.5rem; transform: translate3d(0px, -53px, 0px);"></div>
+          <div class="shape rounded !bg-[#edf2fc] rellax xl:block lg:block md:block absolute z-[1]" data-rellax-speed="0" style="bottom: 0rem; right: -0.8rem; width: 85%; height: 90%; transform: translate3d(0px, 0px, 0px);"></div>
+
+          {% include 'home/slider.html' %}
+        </div>
+        <!-- /column -->
+        <div class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] px-[15px] lg:px-0 xl:px-[20px] max-w-full xl:mt-[-2.5rem] lg:mt-[-2.5rem] mt-[4rem] text-center lg:text-left xl:text-left" data-cues="slideInDown" data-group="page-title" data-delay="600" data-disabled="true">
+          <!-- 1 -->
+          <div class="absolute shape fuchsia w-6 hidden xl:block lg:block" style="top: -10%; left: 40%; transform: rotate(70deg); animation-name: fadeIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;" data-cue="fadeIn" data-delay="1500" data-show="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.42 329.24" data-inject-url="assets/svgs/tri.svg" class="svg-inject icon-svg !w-full !h-full">
+              <g data-name="Layer 2">
+                <path class="svg-fill" d="M164.34 21.92L8.72 251.15c-22.54 33.2 1.24 78.09 41.37 78.09h311.24c40.13 0 63.91-44.89 41.37-78.09L247.08 21.92a50 50 0 00-82.74 0z" data-name="Layer 1"></path>
+              </g>
+            </svg>
+          </div>
+          <!-- 1 -->
+
+          <h1 class="text-[calc(1.85rem_+_1.62vw)] font-normal tracking-[normal] font-DMSerif !leading-[1.1] xl:text-[2.2rem]" data-cue="slideInDown" data-group="page-title" data-delay="600" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;"><span class="typer text-[#3f78e0]" data-delay="150" data-words="Crafting Connectivity&#44;" style="filter: blur(0px); will-change: auto;"></span><span class="cursor text-[#3f78e0]" data-owner="typer"></span></h1>
+          <h1 class="text-[calc(1.85rem_+_1.62vw)] font-normal tracking-[normal] font-DMSerif !leading-[1.1] xl:text-[2.2rem] mb-5" data-cue="slideInDown" data-group="page-title" data-delay="600" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;"><span class="text-success" style="filter: blur(0px); will-change: auto;">Shaping Futuristic Solutions</span></h1>
+          <p class="lead text-[1.25rem] leading-normal mb-7 md:!px-10 lg:!px-0" data-cue="slideInDown" data-group="page-title" data-delay="600" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">We specialize in high-quality network and signal cables, reliable UPS systems, and advanced access control solutions to keep your systems connected and secure.</p>
+          <div class="flex justify-center lg:!justify-start xl:!justify-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900" data-cue="slideInDown" data-disabled="true" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">
+            <span data-cue="slideInDown" data-delay="600" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;"><a data-bs-toggle="modal" data-bs-target="#modal-01" class="btn btn-lg btn-grape text-white !bg-[#1da44c] border-[#1da44c] hover:text-white hover:bg-[#1da44c] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !rounded-[0.8rem] mx-1">Watch Video</a></span>
+            <span data-cue="slideInDown" data-delay="600" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;"><a class="btn btn-lg btn-fuchsia text-white !bg-[#111516] border-[#111516] hover:text-white hover:bg-[#1da44c] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#e668b3] active:border-[#e668b3] disabled:text-white disabled:bg-[#e668b3] disabled:border-[#e668b3] !rounded-[0.8rem] mx-1">Contact Us</a></span>
+          </div>
+        </div>
+        <!-- /column -->
+      </div>
+
+      <div class="pb-16 xl:pb-20 lg:pb-20 md:pb-20">
+        <p class="text-center !mb-8">Trusted by many clients across the world</p>
+        <div class="swiper-container clients !mb-0 relative z-10" data-margin="30" data-dots="false" data-loop="true" data-autoplay="true" data-autoplaytime="1" data-drag="false" data-speed="5000" data-items-xxl="7" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-xs="2">
+          <div class="swiper">
+            <div class="swiper-wrapper ticker">
+              <div class="swiper-slide px-5">
+                <img loading="lazy" class="!w-full !h-auto" src="{% static 'logos/qnb.png' %}" alt="image" />
+              </div>
+          
+              <div class="swiper-slide px-5">
+                <img loading="lazy" class="!w-full !h-auto" src="{% static 'logos/logo_netcon.png' %}" alt="image" />
+              </div>
+              <div class="swiper-slide px-5">
+                <img loading="lazy" class="!w-full !h-auto" src="{% static 'logos/qnb.png' %}" alt="image" />
+              </div>
+         
+              <div class="swiper-slide px-5">
+                <img loading="lazy" class="!w-full !h-auto" src="{% static 'logos/logo_netcon.png' %}" alt="image" />
+              </div>
+              <div class="swiper-slide px-5">
+                <img loading="lazy" class="!w-full !h-auto" src="{% static 'logos/qnb.png' %}" alt="image" />
+              </div>
+          
+              <div class="swiper-slide px-5">
+                <img loading="lazy" class="!w-full !h-auto" src="{% static 'logos/logo_netcon.png' %}" alt="image" />
+              </div>
+              <div class="swiper-slide px-5">
+                <img loading="lazy" class="!w-full !h-auto" src="{% static 'logos/qnb.png' %}" alt="image" />
+              </div>
+             
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper -->
+        </div>
+        <!-- /.swiper-container -->
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-01" tabindex="-1">
+      <div class="modal-dialog modal-xl modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body p-6">
+            <video poster="https://sandbox-tailwind-template.netlify.app/assets/img/photos/movie.jpg" class="player" playsinline controls preload="none">
+              <source src="" type="video/mp4" />
+            </video>
+            <!-- /.row -->
+          </div>
+          <!-- /.modal-body -->
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+  </section>
+  <!-- /.modal -->
+
+  <script>
+    // assets/videos/sample_video.mp4
+    document.getElementById('modal-01').addEventListener('show.bs.modal', function () {
+      var video = document.querySelector('.player source')
+      video.src = "{% static 'videos/sample_video.mp4' %}" // Set the actual video source
+      var videoElement = document.querySelector('.player')
+      videoElement.load() // Load the video
+    })
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('modal-01').addEventListener('hide.bs.modal', function () {
+        var video = document.querySelector('.player')
+        video.pause() // Pause the video
+        video.currentTime = 0 // Optionally, reset to the beginning
+      })
+    })
+  </script>
+  {% include 'home/about.html' %}
+  {% include 'home/products.html' %}
+{% endblock %}

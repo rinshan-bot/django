@@ -1,0 +1,205 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
+    <div class="navbar-brand w-full">
+      <a href="{% url 'core:home_page' %}"><img loading="lazy" src="{% static 'logos/logo_netcon.png' %}" srcset="{% static 'logos/logo2x.png' %} 2x" alt="Netcon logo" /></a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <div class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
+        <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">Netcon</h3>
+        <button type="button" class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]" href="index.php">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <div class="dropdown-menu dropdown-lg mega-menu-dark">
+              <div class="dropdown-lg-content">
+                <div>
+                  <ul class="pl-0 list-none">
+                    <li>
+                      <a class="dropdown-item" href="/projects">
+                        <div class="flex flex-wrap">
+                          <div class="w-full sm:w-1/2 p-1">
+                            <!-- Column 1 with an SVG Icon -->
+                            <div class="flex items-center">
+                              <!-- Example SVG icon (a simple checkmark) -->
+                              <div class="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                  <path d="M3 6h18"></path>
+                                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                              </div>
+
+                              <span>Structured cable</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/projects">
+                        <div class="flex flex-wrap">
+                          <div class="w-full sm:w-1/2 p-1">
+                            <!-- Column 1 with an SVG Icon -->
+                            <div class="flex items-center">
+                              <!-- Example SVG icon (a simple checkmark) -->
+                              <div class="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                  <path d="M3 6h18"></path>
+                                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                              </div>
+                              <span>Access control Solution</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/projects">
+                        <div class="flex flex-wrap">
+                          <div class="w-full sm:w-1/2 p-1">
+                            <!-- Column 1 with an SVG Icon -->
+                            <div class="flex items-center">
+                              <!-- Example SVG icon (a simple checkmark) -->
+                              <div class="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                  <path d="M3 6h18"></path>
+                                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                              </div>
+                              <span>Control & intrumentation cable</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.column -->
+                <div>
+                  <ul class="pl-0 list-none">
+                    <li>
+                      <a class="dropdown-item" href="/projects">
+                        <div class="flex flex-wrap">
+                          <div class="w-full sm:w-1/2 p-1">
+                            <!-- Column 1 with an SVG Icon -->
+                            <div class="flex items-center">
+                              <!-- Example SVG icon (a simple checkmark) -->
+                              <div class="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                  <path d="M3 6h18"></path>
+                                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                              </div>
+                              <span>Power solution (UPS/ Battery)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/projects">
+                        <div class="flex flex-wrap">
+                          <div class="w-full sm:w-1/2 p-1">
+                            <!-- Column 1 with an SVG Icon -->
+                            <div class="flex items-center">
+                              <!-- Example SVG icon (a simple checkmark) -->
+                              <div class="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                  <path d="M3 6h18"></path>
+                                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                              </div>
+                              <span>Racks & Cabinets</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/projects">
+                        <div class="flex flex-wrap">
+                          <div class="w-full sm:w-1/2 p-1">
+                            <!-- Column 1 with an SVG Icon -->
+                            <div class="flex items-center">
+                              <!-- Example SVG icon (a simple checkmark) -->
+                              <div class="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag">
+                                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                  <path d="M3 6h18"></path>
+                                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                              </div>
+                              <span>IP enclosure & outdoor cabinets</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.column -->
+              </div>
+              <!-- /auto-column -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]" href="" data-bs-toggle="dropdown">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]" href="" data-bs-toggle="dropdown">Become A Partner</a>
+          </li>
+        </ul>
+        <!-- /.navbar-nav -->
+        <div class="offcanvas-footer xl:hidden lg:hidden">
+          <div>
+            <a href="mailto:first.last@email.com" class="link-inverse">info@netconenterprise.com</a>
+            <br /> 00 (91) 9567 9495 26<br />
+            <nav class="nav social social-white mt-4">
+              <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
+              <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
+              <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i></a>
+              <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i></a>
+              <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i></a>
+            </nav>
+            <!-- /.social -->
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    <div class="navbar-other w-full !flex !ml-auto">
+      <ul class="navbar-nav !flex-row !items-center !ml-auto">
+        <li class="nav-item">
+          <nav class="nav social social-muted justify-end text-right">
+            <a class="m-[0_0_0_.7rem] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]" href="#"><i class="uil uil-linkedin before:content-['\ed59'] text-[1rem] text-[#5daed5]"></i></a>
+            <a class="m-[0_0_0_.7rem] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] text-[1rem] text-[#4470cf]"></i></a>
+            <a class="m-[0_0_0_.7rem] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]" href="#"><i class="uil uil-dribbble before:content-['\eaa2'] text-[1rem] text-[#e94d88]"></i></a>
+            <a class="m-[0_0_0_.7rem] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]" href="#"><i class="uil uil-instagram before:content-['\eb9c'] text-[1rem] text-[#d53581]"></i></a>
+          </nav>
+          <!-- /.social -->
+        </li>
+        <li class="nav-item xl:hidden lg:hidden">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!--  -->
